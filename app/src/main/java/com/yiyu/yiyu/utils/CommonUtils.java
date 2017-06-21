@@ -73,7 +73,6 @@ public class CommonUtils {
         //先获取主线程的线程号然后和当前线程号比较
         return getMainThreadId() == android.os.Process.myTid();
     }
-
     // 区分是否在 主线程中,做UI处理
     public static void runOnMainThread(Runnable runnable) {
         if (isRunInMainThread()) {

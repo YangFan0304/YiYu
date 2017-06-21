@@ -29,12 +29,12 @@ public class MainActivity extends AppCompatActivity {
         mNavigateTabBar = (MainNavigateTabBar) findViewById(R.id.mainTabBar);
         mNavigateTabBar.onRestoreInstanceState(savedInstanceState);
 
-        mNavigateTabBar.addTab(HomeFragment.class, new MainNavigateTabBar.TabParam(R.mipmap.comui_tab_home, R.mipmap.comui_tab_home_selected, TAG_PAGE_HOME));
-        mNavigateTabBar.addTab(FishingGroFragment.class, new MainNavigateTabBar.TabParam(R.mipmap.comui_tab_city, R.mipmap.comui_tab_city_selected, TAG_PAGE_CITY));
+        mNavigateTabBar.addTab(HomeFragment.class, new MainNavigateTabBar.TabParam(R.mipmap.yiyu, R.mipmap.yiyu_xuanzhong, TAG_PAGE_HOME));
+        mNavigateTabBar.addTab(FishingGroFragment.class, new MainNavigateTabBar.TabParam(R.mipmap.fishing_gro, R.mipmap.fishing_xz, TAG_PAGE_CITY));
         mNavigateTabBar.addTab(null, new MainNavigateTabBar.TabParam(0, 0, TAG_PAGE_PUBLISH));
-        mNavigateTabBar.addTab(FriendsFragment.class, new MainNavigateTabBar.TabParam(R.mipmap.comui_tab_message, R.mipmap.comui_tab_message_selected, TAG_PAGE_MESSAGE));
-        mNavigateTabBar.addTab(MineFragment.class, new MainNavigateTabBar.TabParam(R.mipmap.comui_tab_person, R.mipmap.comui_tab_person_selected, TAG_PAGE_PERSON));
-        
+        mNavigateTabBar.addTab(FriendsFragment.class, new MainNavigateTabBar.TabParam(R.mipmap.friends, R.mipmap.friends_xuanzhong, TAG_PAGE_MESSAGE));
+        mNavigateTabBar.addTab(MineFragment.class, new MainNavigateTabBar.TabParam(R.mipmap.mine, R.mipmap.mine_xuangzheng, TAG_PAGE_PERSON));
+
     }
     @Override
     protected void onSaveInstanceState(Bundle outState) {
